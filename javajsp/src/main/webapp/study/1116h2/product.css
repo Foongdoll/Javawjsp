@@ -1,0 +1,18 @@
+body {
+  width: 1000px;
+  margin: 0px auto;
+  padding: 0px;
+}
+#header {
+  background-color: aqua;
+  text-align: center;
+  height: 80px;
+}
+#footer {
+  background-color: #ccc;
+  text-align: center;
+  height: 75px;
+}
+#content {
+  background-color: #fff;
+}
