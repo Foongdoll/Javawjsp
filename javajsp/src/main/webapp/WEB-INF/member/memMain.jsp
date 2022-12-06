@@ -20,9 +20,11 @@
 <p><br/></p>
 <div class="container">
   <h2>회 원 전 용 방</h2>
-  <hr/>
-  <p><font color="blue"><b>${sNickName}</b></font>님 로그인 중이십니다.</p>
-  <p>현재 <font color="blue"><b>${strLevel}</b></font> 등급 이십니다.</p>
+  <hr/>																
+  <p><font color="blue"><b>${sNickName}</b></font>님 로그인 중이십니다.</p> 
+  <p>회원 사진</p>
+  <img src="${ctp}/data/member/${sPhoto}" style="width: 400px; height: 300px"/>
+  <p>현재 <font color="blue"><b>${strLevel}</b></font> 등급 이십니다.</p>   
   <p>누적 포인트 : <span class="viewCheck">${point}</span></p>
   <p>최종 접속일 : <span class="viewCheck">${fn:substring(lastDate,0,fn:length(lastDate)-2)}</span></p>
   <p>총 방문횟수 : <span class="viewCheck">${visitCnt}</span></p>

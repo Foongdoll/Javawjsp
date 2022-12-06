@@ -49,6 +49,7 @@
       <th>별명</th>
       <th>성명</th>
       <th>성별</th>
+      <th>회원 사진</th>
     </tr>
     <c:set var="curScrStartNo" value="${curScrStartNo}"/>
     <c:forEach var="vo" items="${vos}" varStatus="st">
@@ -58,6 +59,7 @@
         <td>${vo.nickName}</td>
         <td>${vo.name}<c:if test="${sLevel == 0 && vo.userInfor == '비공개'}"><font color='red'>(비공개)</font></c:if></td>
         <td>${vo.gender}</td>
+        <td><img src="${ctp}/data/member/${vo.photo}" style="width: 200px; height: 100px"></td>
       </tr>
       <c:set var="curScrStartNo" value="${curScrStartNo-1}"/>
     </c:forEach>

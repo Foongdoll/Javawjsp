@@ -39,7 +39,7 @@ public class MemLoginOkCommand implements MemberInterface {
 		session.setAttribute("sMid", mid);
 		session.setAttribute("sNickName", vo.getNickName());
 		session.setAttribute("sLevel", vo.getLevel());
-		
+		session.setAttribute("sPhoto", vo.getPhoto());
 		// 2~3.
 		Date now = new Date();
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");

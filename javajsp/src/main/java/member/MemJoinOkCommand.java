@@ -60,9 +60,6 @@ public class MemJoinOkCommand implements MemberInterface {
 			photo = (String)photos.nextElement();
 			originalPhoto = multipartRequest.getOriginalFileName(photo);
 			fileSystemPhoto = multipartRequest.getFilesystemName(photo); // 서버에 저장될 파일 이름
-			System.out.println(photo);
-			System.out.println(originalPhoto);
-			System.out.println(fileSystemPhoto);
 		}
 		
 		if(photo.equals("noimage")) {

@@ -46,6 +46,8 @@
     else if(msg == "upLoad1Ok") msg = "업로드 성공 !!";
     else if(msg == "upLoad1No") msg = "업로드 실패 !!";
     else if(msg == "boDeleteReplyCheckOk") msg = "게시글에 댓글이 있어서 게시글 삭제가 불가능합니다.";
+    else if(msg == "pdsInputOk") msg = "모든 파일이 자료실에 업로드 되었습니다.";
+    else if(msg == "pdsInputNo") msg = "파일 업로드에 실패하였습니다.";
     
     alert(msg);
     if(url != "") location.href = url;
